@@ -1,0 +1,16 @@
+.board{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.board-cont{
+    width: 100%;
+}
+
+.counter{
+    font-size: 6rem;
+    margin: .5rem;
+    letter-spacing: .1ch;
+}
