@@ -12,7 +12,6 @@ export default function Card(props){
                     throw new Error(response.status);
                 }
                 const x = await response.json();
-                console.log(x);
                 setUrl(x.data.images.original.url);
             }catch(e){
                 console.log(e.message);

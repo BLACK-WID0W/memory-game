@@ -35,9 +35,7 @@ export default function Board(){
                             key={character.id}
                             onClick={() => {
                                 if(!selectedItems.includes(character.id) && selectedItems.length <= characters.length){
-                                    let newSet = [...selectedItems];
-                                    newSet.push(character.id);
-                                    setSelectedItems(newSet);
+                                    setSelectedItems([...selectedItems, character.id]);
                                     setSelectedCount(selectedCount + 1);
                                 }else{
                                     setSelectedItems([]);

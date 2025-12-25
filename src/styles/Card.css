@@ -24,3 +24,11 @@
     transition: box-shadow .3s ease, border .3s ease;
 }
 
+@keyframes entry{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+}
+
